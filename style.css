@@ -1,7 +1,31 @@
 /**
 * common css here 
 */
-*{
+* {
     margin: 0;
     padding: 0;
 }
+
+/**
+* banner section css
+*/
+/* .banner-sec {
+    display: flex;
+    align-items: center;
+} */
+
+.banner-sec {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+/**
+* players section css
+*/
+
+
+
+/**
+* footer section css
+*/
