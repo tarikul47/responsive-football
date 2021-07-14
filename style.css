@@ -10,17 +10,12 @@ body {
 /**
 * banner section css
 */
-/* .banner-sec {
-    display: flex;
-    align-items: center;
-} */
-
 .banner-sec {
     background-color: #2D25A0;
 }
 .banner-box {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 667px;
     width: 90%;
     align-items: center;
@@ -58,9 +53,8 @@ body {
 }
 
 /*
-* Animation 
+* Animation add here
 */
-
 @keyframes kenburns-top {
     0% {
       transform: scale(1) translateY(0);
@@ -76,7 +70,6 @@ body {
 .banner-sec:hover .banner-image img{
     animation: kenburns-top 5s ease-out both;
 }
-
 
 /**
 * players section css
@@ -204,14 +197,14 @@ body {
     color: #FFFFFF;
     font-size: 12px;
 }
-.instagram_images_item:hover .like_counter {
+/* .instagram_images_item:hover .like_counter {
     display: flex;
     background-color: rgb(0 0 0 / 35%);
     width: 100%;
     height: 100%;
     align-items: center;
     justify-content: center;
-}
+} */
 
 /**
 * footer section css
@@ -245,6 +238,77 @@ p.copyright-content {
 /**
 * media queries for mobile
 */
-@media (max-width: 700px) {
-    
+@media (max-width: 425px) {
+
+    /**
+    * Banner section 
+    */
+    .banner-box{
+        grid-template-columns: 1fr; 
+        grid-template-rows: auto;
+        width: 100%;
+        grid-row-gap:50px;
+    }
+    .banner-title {
+        font-size: 36px;
+        line-height: 45px;
+    }
+    .banner-image img {
+        width: 100%;
+        height: 100%;
+    }
+    .banner-sec:hover .banner-image img{
+        animation: none;
+    }
+
+    /**
+    * Players Section
+    */
+    .players-sec {
+        grid-template-columns: repeat(1, 330px);
+    }
+
+    /**
+    * Features Section
+    */
+    .section-title .title {
+        font-size: 36px;
+        line-height: 45px;
+    }
+
+    .features-box {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+    }
+    /**
+    * instagram section
+    */
+    .instagram-sec{
+        padding: 0px;
+    }
+    .instagram_images {
+        grid-template-columns: 1fr;
+        grid-template-rows: 265px;
+        grid-row-gap: 30px;
+    }
+    .extra {
+        margin-top: 125px;
+    }
+
+    /**
+    * Fooeter Section 
+    */
+    .copyright-sec {
+        padding-top: 30px;
+    }
+    .logo-sec img {
+        width: 330px;
+    }
+
+
+
+
+
+
 }
