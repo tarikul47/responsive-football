@@ -96,6 +96,18 @@ body {
     text-align: left;
 }
 /**
+* instagram section
+*/
+.instagram_images {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-column-gap: 10px;
+}
+.instagram_images img {
+    width: 100%;
+}
+
+/**
 * footer section css
 */
 .copyright-sec {
@@ -123,4 +135,10 @@ p.copyright-content {
     font-size: 18px;
     line-height: 24px;
     color: #000000;
+}
+/**
+* media queries for mobile
+*/
+@media (max-width: 700px) {
+    
 }
